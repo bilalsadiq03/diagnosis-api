@@ -198,7 +198,7 @@ Deployment
 The API is deployed on Render.
 
 Live URL:\
-[https://your-app.onrender.com](https://your-app.onrender.com/)
+[https://diagnosis-api-vsin.onrender.com](https://diagnosis-api-vsin.onrender.com)
 
 * * * * *
 
