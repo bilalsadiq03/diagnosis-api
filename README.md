@@ -171,6 +171,15 @@ Setup Instructions
 
 * * * * *
 
+## API Documentation
+
+Swagger UI is available at:
+https://localhost:5000/api-docs
+
+It provides interactive API testing and detailed request/response schemas.
+
+* * * * *
+
 Deployment
 ----------
 
