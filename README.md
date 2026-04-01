@@ -69,22 +69,26 @@ API Endpoints
 
 **POST /api/diagnose**
 
-Request:\
-{\
-"symptoms": "fever, cough, chest pain"\
+Request:
+```bash
+{
+"symptoms": "fever, cough, chest pain"
 }
+```
 
-Response:\
-{\
-"success": true,\
-"data": [\
-{\
-"condition": "Flu",\
-"probability": "60%",\
-"next_steps": "Consult a general physician and get a flu test"\
-}\
-]\
+Response:
+```bash
+{
+"success": true,
+"data": [
+    {
+        "condition": "Flu",
+        "probability": "60%",
+        "next_steps": "Consult a general physician and get a flu test"
+    }
+]
 }
+```
 
 * * * * *
 
@@ -92,13 +96,14 @@ Response:\
 
 **GET /api/history**
 
-Response:\
-{\
-"success": true,\
-"count": 5,\
-"data": [...]\
+Response:
+```bash
+{
+"success": true,
+"count": 5,
+"data": [...]
 }
-
+```
 * * * * *
 
 AI Integration
@@ -155,19 +160,26 @@ The API was tested using multiple scenarios:
 Setup Instructions
 ------------------
 
-1.  Clone the repository:\
-    git clone <https://github.com/bilalsadiq03/diagnosis-api.git>
+1.  Clone the repository:
+       ```bash
+        git clone <https://github.com/bilalsadiq03/diagnosis-api.git>
+       ```
 
-2.  Install dependencies:\
-    npm install
+3.  Install dependencies:
+       ```bash
+        npm install
+       ```
+5.  Create a .env file:
+       ```bash 
+        MONGO_URI=your_mongodb_connection_string
+        GEMINI_API_KEY=your_gemini_api_key
+        PORT=5000
+       ```
 
-3.  Create a .env file:\
-    MONGO_URI=your_mongodb_connection_string\
-    GEMINI_API_KEY=your_gemini_api_key\
-    PORT=5000
-
-4.  Run the server:\
-    npm start
+6.  Run the server:
+       ``` bash
+       npm start
+       ```
 
 * * * * *
 
