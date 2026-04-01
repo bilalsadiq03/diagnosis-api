@@ -14,4 +14,9 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.use("/api", diagnosisRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Smart Diagnosis API is running...");
+});
+
+
 module.exports = app;
